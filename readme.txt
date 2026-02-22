@@ -1,4 +1,4 @@
-A project from class and its [visualization link](https://ynhi27.github.io/personal-profile/index.html)
+A project from class and its visualization link: https://ynhi27.github.io/personal-profile/index.html
 
 --Readme for class--
 --Readme document for *Y Nhi Tran*, *tranyn1@uci.edu*--
