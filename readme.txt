@@ -1,3 +1,6 @@
+A project from class and its visualization link: <href>https://ynhi27.github.io/personal-profile/index.html</href>
+
+--Readme for class--
 --Readme document for *Y Nhi Tran*, *tranyn1@uci.edu*--
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
