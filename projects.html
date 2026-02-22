@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Y Nhi Tran">
+  <meta name="description" content="Personal portfolio website for a Computer Science at UC Irvine">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <title>Y Nhi Tran | Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-navy-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand Montserrat text-accent" href="index.html">CS @ UCI</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects" class="py-5 bg-navy">
+            <div class="container-fluid px-md-5">
+                <h2 class="display-5 fw-bold mb-5 text-center">FEATURED PROJECTS</h2>  
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 project-card border-0">
+                            <div class="media-container">
+                                <img src="images/zebrafish-after.jpg" class="img-back" alt="Microscope image of zebrafish after segmentation">
+                                <img src="images/zebrafish-before.jpg" class="img-front" alt="Microscope image of zebrafish before segmentation">
+                                <div class="hover-tag">View AI result</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="text-accent">AI Bio Classification</h3>
+                                <p class="text-dim">Deep learning pipeline using PyTorch to classify epithelial cells.</p>
+                                <ul class="feature-list">
+                                    <li>Implemented <strong>Otsu thresholding</strong> and morphology for deterministic segmentation of 800+ cells.</li>
+                                    <li>Compared baseline CNNs with <strong>Transfer Learning (ResNet50, EfficientNet)</strong> to optimize accuracy.</li>
+                                    <li>Analyzed model performance using F1 scores and confusion matrices to mitigate class imbalance.</li></ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">                                
+                                <span class="tech-badge"><em class="fab fa-python"></em> PyTorch</span>
+                                <span class="tech-badge"><em class="fas fa-camera"></em> OpenCV</span>    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 project-card border-0">
+                            <div class="media-container">
+                                <video src="videos/plant-demo.mp4" class="video-back" autoplay loop muted playsinline></video>
+                                <img src="images/plant-static.jpg" class="img-front" alt="Smart Plant Monitoring System">
+                                <div class="hover-tag">Hover to review</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="text-accent">Smart Plant IoT</h3>
+                                <p class="text-dim">Secure telemetry system transmitting real-time sensor data to Azure.</p>
+                                <ul class="feature-list">
+                                    <li>Securely transmitted telemetry data to <strong>Microsoft Azure IoT Hub</strong> via encrypted Wi-Fi.</li>
+                                    <li>Engineered a <strong>non-blocking system architecture</strong> to ensure 99.9% uptime for sensor data acquisition.</li>
+                                    <li>Built a live monitoring dashboard utilizing <strong>WebSockets</strong> for sub-second latency updates.</li></ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">                            
+                                <span class="tech-badge"><em class="fas fa-microchip"></em> TTGO</span>
+                                <span class="tech-badge"><em class="fab fa-python"></em> Python</span>
+                                <span class="tech-badge"><em class="fas fa-cloud"></em> Azure</span>
+                                <span class="tech-badge"><em class="fas fa-network-wired"></em> WebSocket</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 project-card border-0">
+                            <div class="media-container">
+                                <video src="videos/robotic-arm.mp4" class="video-back" autoplay loop muted playsinline></video>
+                                <img src="images/robotic-static.jpg" class="img-front" alt="Robotic System works as robotic arm writing">
+                                <div class="hover-tag">Hover to review</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="text-accent">AX5 Robotic System</h3>
+                                <p class="text-dim">Precision motion control for robotic handwriting via G-code.</p>
+                                <ul class="feature-list">
+                                    <li>Configured <strong>CNC controllers</strong> and optimized <strong>G-code</strong> for precise coordinate mapping.</li>
+                                    <li>Utilized Inkscape and Candle to translate vector graphics into mechanical toolpaths.</li>
+                                    <li>Gained hands-on experience in hardware calibration and motion synchronization.</li></ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">                                
+                                <span class="tech-badge"><em class="fas fa-microchip"></em> Arduino</span>
+                                <span class="tech-badge"><em class="fas fa-code"></em> G-code</span>
+                                <span class="tech-badge"><em class="fas fa-pen-nib"></em> Candle</span>
+                                <span class="tech-badge"><em class="fas fa-pen-nib"></em> Inkscape</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 pt-5 bg-navy border-top border-accent">
+        <div class="container">
+            <div class="text-dim Roboto">
+                <a href="http://validator.w3.org/check?uri=referer">
+                W3C validator
+                </a>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start">
+                    <p class="text-white Montserrat mb-0" style="font-size: 0.9rem;">
+                        © 2026 Y Nhi Tran
+                    </p>
+                    <small class="text-accent Roboto">Computer Science | UCI</small>
+                </div>
+
+                <div class="col-md-4 text-center my-3 my-md-0">
+                    <a href="https://linkedin.com/in/nhitrany/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <em class="fab fa-linkedin-in"></em>
+                    </a>
+                    <a href="https://github.com/ynhi27" target="_blank" class="social-icon" aria-label="GitHub">
+                        <em class="fab fa-github"></em>
+                    </a>
+                    <a href="mailto:tranyn1@uci.edu" target="_blank" class="social-icon" aria-label="Email">
+                        <em class="fas fa-envelope"></em>
+                    </a>
+                </div>
+
+                <div class="col-md-4 text-center text-md-end">
+                    <nav aria-label="Footer Navigation">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="experience.html" class="footer-link">Experience</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

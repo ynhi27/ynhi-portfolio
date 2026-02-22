@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Y Nhi Tran">
+  <meta name="description" content="Personal portfolio website for a Computer Science at UC Irvine">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <title>Y Nhi Tran | Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-navy-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand Montserrat text-accent" href="index.html">CS @ UCI</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4 border border-accent rounded-4 overflow-hidden bg-navy-light shadow-lg">
+                    
+                    <div class="col-lg-6 p-5">
+                        <h3 class="text-accent Montserrat mb-4">Contact</h3>
+                        <form action="#" method="post">
+                            <div class="mb-3">
+                                <label for="name" class="form-label text-white">Full Name</label>
+                                <input type="text" class="form-control bg-navy border-accent text-white" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-white">Email Address</label>
+                                <input type="email" class="form-control bg-navy border-accent text-white" id="email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label text-white">Subject</label>
+                                <select class="form-select bg-navy border-accent text-white" id="subject">
+                                    <option selected>General Inquiry</option>
+                                    <option value="1">Internship Opportunity</option>
+                                    <option value="2">Project Collaboration</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label text-white">Message</label>
+                                <textarea class="form-control bg-navy border-accent text-white" id="message" rows="4" placeholder="How can I help you?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-accent w-100 fw-bold">Send Mesage</button>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6 p-0">
+                        <div class="h-100">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4384.853477677941!2d-117.84257169171109!3d33.64583529942977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1769007703196!5m2!1sen!2sus" 
+                                style="border:0; width: 100%; height: 100%; min-height: 500px;" 
+                                allowfullscreen="" loading="lazy" title="UC Irvine Campus Map">
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-navy-dark border-bottom border-accent">
+            <div class="container text-center">
+                <h1 class="display-5 Montserrat text-accent fw-bold">GET IN TOUCH</h1>
+                <p class="lead text-white-50 mx-auto" style="max-width: 700px;">
+                    I am currently a Computer Science student at UC Irvine, actively seeking 
+                    <strong>Summer 2026 Internship</strong> opportunities. Whether you have a 
+                    question or just want to connect, my inbox is always open!
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 pt-5 bg-navy border-top border-accent">
+        <div class="container">
+            <div class="text-dim Roboto">
+                <a href="http://validator.w3.org/check?uri=referer">
+                W3C validator
+                </a>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start">
+                    <p class="text-white Montserrat mb-0" style="font-size: 0.9rem;">
+                        © 2026 Y Nhi Tran
+                    </p>
+                    <small class="text-accent Roboto">Computer Science | UCI</small>
+                </div>
+
+                <div class="col-md-4 text-center my-3 my-md-0">
+                    <a href="https://linkedin.com/in/nhitrany/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <em class="fab fa-linkedin-in"></em>
+                    </a>
+                    <a href="https://github.com/ynhi27" target="_blank" class="social-icon" aria-label="GitHub">
+                        <em class="fab fa-github"></em>
+                    </a>
+                    <a href="mailto:tranyn1@uci.edu" target="_blank" class="social-icon" aria-label="Email">
+                        <em class="fas fa-envelope"></em>
+                    </a>
+                </div>
+
+                <div class="col-md-4 text-center text-md-end">
+                    <nav aria-label="Footer Navigation">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="projects.html" class="footer-link">Projects</a>
+                        <a href="experience.html" class="footer-link">Experience</a>                        
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

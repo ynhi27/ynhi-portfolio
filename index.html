@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Y Nhi Tran
+EMAIL: tranyn1@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Y Nhi Tran">
+  <meta name="description" content="Personal portfolio website for a Computer Science at UC Irvine">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- you would link to an external stylesheet here! -->
+  <link rel="stylesheet" href="css/style.css">
+   <!-- you would also link to Bootstrap here! -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <title>Y Nhi Tran | Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navy-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand Montserrat text-accent" href="index.html">CS @ UCI</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experience.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <section id="home" class="py-5 bg-navy">
+      <div class="container">
+          <div class="row align-items-center justify-content-center text-center text-md-start">
+              <div class="col-10 col-md-4 col-lg-3 mb-4 mb-md-0 d-flex justify-content-center">
+                  <img src="images/my-profile.jpg" 
+                      class="img-fluid rounded-circle border border-3 profile-img" 
+                      alt="My Profile Picture">
+              </div>
+
+              <div class="col-md-8 col-lg-6">
+                  <h2 class="display-3 fw-bold mb-0 name-text">Y NHI TRAN</h2>
+                  <p class="text-uppercase tracking-wider intro-text mb-2">Computer Science Student @ UCI</p>
+              </div>              
+          </div>
+      </div>
+    </section>
+
+    <div id="about" class="py-5 bg-navy">
+        <div class="about-container d-flex justify-content-center">
+          <div class="highlight-box p-5 shadow-lg">
+            <p class="about-text">
+              As a Computer Science student at UCI, I combine a strong technical foundation 
+              with a proven track record of reliability and accountability. While building 
+              high-performance Python scrapers and IoT dashboards, I also served as an 
+              Anteater Express Operator, where I honed my ability to maintain focus in
+              safety-critical environments and perform under pressure. This unique blend of
+              technical proficiency in C++ and Python and the disciplined work ethic of a
+              campus leader allows me to approach software development with a focus on
+              both precision and professional responsibility. I am fluent in English
+              and Vietnamese, and I’m eager to contribute to a collaborative engineering team.
+            </p>            
+          
+            <div class="quick-facts bg-opacity-10 border-0">
+              <span>📍 Irvine, CA</span>
+              <span>🎓 UC Irvine</span>
+              <span>🇻🇳 Fluent in Vietnamese</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="education-section py-5 bg-navy">
+        <div class="container">
+            <h2 class="text-accent Montserrat text-center mb-5">Academic Foundation</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="edu-card p-4 shadow-lg">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="edu-icon me-3">
+                              <img src="images/uci-logo.svg" alt="UCI Logo" class="edu-logo" style="width: 52px; height: auto;">
+                            </div>
+                            <div>
+                                <h3 class="text-white Montserrat mb-0">University of California, Irvine</h3>
+                                <p class="text-accent mb-0">Bachelor of Science in Computer Science</p>
+                            </div>
+                        </div>
+                        
+                        <div class="edu-details ps-md-5">
+                            <ul class="text-dim Roboto">
+                                <li><strong>Relevant Coursework:</strong> Internet of Things (IoT) Software and Systems, 
+                                  Project Management, Operating System Organization, Human Computer Interaction.</li>
+                                <li>Expected Graduation: December 2026</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>  
+
+  <footer class="py-4 pt-5 bg-navy border-top border-accent">
+    <div class="container">
+      <div class="text-dim Roboto">
+        <a href="http://validator.w3.org/check?uri=referer">
+          W3C validator
+        </a>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center text-md-start">
+          <p class="text-white Montserrat mb-0" style="font-size: 0.9rem;">
+            © 2026 Y Nhi Tran
+          </p>
+          <small class="text-accent Roboto">Computer Science | UCI</small>
+        </div>
+
+        <div class="col-md-4 text-center my-3 my-md-0">
+          <a href="https://linkedin.com/in/nhitrany/" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <em class="fab fa-linkedin-in"></em>
+          </a>
+          <a href="https://github.com/ynhi27" target="_blank" class="social-icon" aria-label="GitHub">
+            <em class="fab fa-github"></em>
+          </a>
+          <a href="mailto:tranyn1@uci.edu" target="_blank" class="social-icon" aria-label="Email">
+            <em class="fas fa-envelope"></em>
+          </a>
+         </div>
+
+          <div class="col-md-4 text-center text-md-end">
+            <nav aria-label="Footer Navigation">
+              <a href="projects.html" class="footer-link">Projects</a>
+              <a href="experience.html" class="footer-link">Experience</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
